@@ -1,6 +1,6 @@
 package Exercise3;
 
-public class Product {
+public abstract class Product {
 	private String name;
 	private double price;
 	private int quantity;
@@ -10,6 +10,8 @@ public class Product {
 		this.price = price;
 		this.quantity = quantity;
 	}
+
+	interface getTax{};
 
 	public String getName() {
 		return name;
